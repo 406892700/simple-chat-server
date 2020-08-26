@@ -1,0 +1,19 @@
+{
+  "extends": ["airbnb-base"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+      "typescript"
+  ],
+  "parserOptions": {
+      "ecmaFeatures": {
+          "jsx": true
+      },
+      "jsx": true,
+      "useJSXTextNode": true,
+      "tsconfigRootDir": "./"
+  },
+  "rules": {
+    "no-console": 0,
+    "semi": 0
+  }
+}
