@@ -11,9 +11,9 @@ const port = process.env.PORT || 3000
 io.on('connection', (socket:any) => {
   socket.on('chat message', (msg:any) => {
     io.emit('chat message', msg)
-  });
-});
+  })
+})
 
 server.listen(port, () => {
   console.log(`listening on *: ${port}`);
-});
+})
