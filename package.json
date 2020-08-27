@@ -4,7 +4,7 @@
   "description": "simplechat server side",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node dist/server.js",
+    "start": "tsc && pm2 start dist/server.js",
     "watch-server": "nodemon --inspect --watch 'src/**/*' -e ts,tsx --exec 'node -r ts-node/register' ./src/server.ts"
   },
   "author": "Simple",
